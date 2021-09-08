@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 2em;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #f2f2f2;
+    -webkit-box-shadow: 1px 1px 4px 0px rgba(176, 176, 176, 1);
+    -moz-box-shadow: 1px 1px 4px 0px rgba(176, 176, 176, 1);
+    box-shadow: 1px 1px 4px 0px rgba(176, 176, 176, 1);
+    background-color: #fff;
+    height: 450px;
+    background-color: #f8f8f8;
+}
+
+.row {
+    flex: 100%;
+    display: flex;
+}
+
+.output {
+    flex: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 3px;
+    font-size: 24px;
+    padding: 24px 5px;
+    font-weight: 700;
+    text-align: right;
+    border: none;
+    background-color: #252525;
+}
+
+.output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1rem;
+}
+
+.output .active-operation {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1rem;
+}
+
+.output .current-operand {
+    color: white;
+    font-size: 2rem;
+}
+
+.container button {
+    flex: 22%;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #cccccc;
+}
+
+.container button:active {
+    background-color: #b1b1b1;
+}
+
+.span-two {
+    flex: 47% !important;
+}
